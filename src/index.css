@@ -4,4 +4,9 @@ body {
   font-family: sans-serif;
   background-image: url('./images/sw-bg.jpg');
   background-size: cover;
+  justify-content: center;
+}
+
+div {
+  position: center;
 }
