@@ -31,12 +31,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React is a JavaScript library that allows a developer to more easily render interactive UIs.  It allows for the building of Components, which can easily pull information from an API and render that info neatly on the webpage.  React also allows the developer to easily style these components without even needing a seperate CSS file.
 
 1. Describe component state.
+State refers to a specific instance of a component.  This state can change for any number of reasons, such as user interaction.  For instance, an "expand" button could change a component's state from "collapsed" to "expanded", which would look like an element toggling open and closed on the user interface.  A developer can set different States, and manipulate those States, easily on components through React. 
 
 1. Describe props.
+Props is a properties Object that is passed in to a React component.  Props contains the info that the component needs to render on the webpage.  For instance, if a component renders a gallery of photos from an API, the props would contain the array of photos
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+Side effects can happen when we try to do certain things with components in React, such as making an API call.  These can often result in unwanted effects such as making too many API calls, or taking large amounts of memory or bandwidth.  React allows us to manage these side effects with useEffect, where we can limit the amount of times the side effect will happen.  For instance, we can limit the side effect to only happen once by adding an empty array to the end of the effect function, as useEffect(() => {}, [])
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
